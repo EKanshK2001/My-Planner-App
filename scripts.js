@@ -6,13 +6,13 @@ const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday
 
 const date = new Date();
 const day = weekday[date.getDay()].toLocaleString();
-console.log(day);
+// console.log(day);
 const todaysDate = date.getDate().toLocaleString();
-console.log(todaysDate);
+// console.log(todaysDate);
 const month = months[date.getMonth()].toLocaleString();
-console.log(month);
+// console.log(month);
 const year = date.getFullYear().toLocaleString().replace(/,/, '');
-console.log(year);
+// console.log(year);
 
 
 const today = day + ', ' + todaysDate + ' ' + month + ' ' + year;

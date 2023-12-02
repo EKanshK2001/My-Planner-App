@@ -154,6 +154,7 @@ body {
   justify-content: right;
   border-left: 2px solid var(--bs-orange);
   border-radius: 2px;
+  cursor: pointer;
   /* border: 1px solid red; */
 }
 
@@ -192,24 +193,32 @@ body {
 }
 
 .create-plans-form .plan-header{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 10px; */
-  display: grid;
   gap: 10px;
   
-}
 
+  /* display: grid;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-template-columns: 3fr;
+  gap: 10px; */
+
+
+}
 
 .form-input{
   outline: none;
-  padding: 10px 25px;
+  padding: 25px;
 
 }
 
-.create-plans-form .plan-header textarea{
-  padding-top: px;
+.label-inputs {
+  
 }
+
+/* .create-plans-form .plan-header textarea{
+  
+} */
 
 .create-plans-form .plan-header .submit-btn{
   
