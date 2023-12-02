@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* SOME COLORS PICKED FROM BOOTSTRAP */
 :root {
@@ -128,20 +128,139 @@ body {
   padding-right: 0.5rem;
 }
 
+
+      /* DATE */
+
+
 .date {
   display: flex;
   flex-direction: column;
   margin: 50px 50px;
   align-items: center;
   justify-content: center;
+  font-size: 2.5em;
+}
+
+                    /* MAIN SECTION */
+
+
+      /* ADD PLANS SECTION */
+
+.add-plans{
+  display: flex;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+  justify-content: right;
+  border-left: 2px solid var(--bs-orange);
+  border-radius: 2px;
+  /* border: 1px solid red; */
+}
+
+.add-plans-text {
+  margin: 0;
+  padding: 10px;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+
+.plus-btn{
+  position: absolute;
+  z-index: 2;
+  background-color: var(--bs-gray-200);
+  padding: 0% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--bs-orange);
+  border-radius: 12px;
+}
+
+.plans-line{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bs-orange);
+  margin: 3% 0px;
+}
+
+/* CREATE PLAN FORM */
+
+.create-plans-form{
+  margin: 25px 0;
+}
+
+.create-plans-form .plan-header{
+  /* display: flex;
+  flex-direction: column;
+  gap: 10px; */
+  display: grid;
+  gap: 10px;
+  
+}
+
+
+.form-input{
+  outline: none;
+  padding: 10px 25px;
+
+}
+
+.create-plans-form .plan-header textarea{
+  padding-top: px;
+}
+
+.create-plans-form .plan-header .submit-btn{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TIME TEMPLATE*/
+
+.time-template{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  margin: 0px 0px 20px 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.time-text{
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5em;
+  margin: 0.5% 0px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: var(--bs-gray-200);
+  border-left: 2px solid var(--base04);
+  border-right: 2px solid var(--base04);
+  /* border-radius: 12px; */
 }
 
 .line {
-  width: 80%;
+  position: relative;
+  z-index: 1;
+  width: 100%;
   height: 2px;
   background-color: var(--base04);
-  margin: 20px 0px;
+  margin: 3% 0px;
 }
+
+/* MAIN SECTION */
 
 main{
   display: flex;
@@ -187,12 +306,17 @@ main{
   .container {
     max-width: 1280px;
   }
+
 }
 
 /* xl */
 @media (max-width: 1280px) {
   .container {
     max-width: 1024px;
+  }
+  
+  .time-template .time-text{
+    font-size: 1.5em;
   }
 }
 
@@ -201,12 +325,18 @@ main{
   .container {
     max-width: 768px;
   }
+  .time-template .time-text{
+    font-size: 1.4em;
+  }
 }
 
 /* md */
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
+  }
+  .time-template .time-text{
+    font-size: 1.3em;
   }
 }
 
@@ -215,12 +345,18 @@ main{
   .container {
     max-width: 475px;
   }
+  .time-template .time-text{
+    font-size: 1.2em;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .container {
     width: 100%;
+  }
+  .time-template .time-text{
+    font-size: 1.1em;
   }
 }
 

@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="styles.css" rel="stylesheet">
     <title>My Planner</title>
 </head>
@@ -24,10 +25,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" style = "margin: auto 10px" aria-current="page" href="#">Today's Plans</a>
-                    <a class="nav-link" style = "margin: auto 10px" href="#">Upcoming Plans</a>
-                    <a class="nav-link" style = "margin: auto 10px" href="#">Calendar</a>
-                    <a class="nav-link" style = "margin: auto 10px" href="#">Progress Track</a>
+                    <a class="nav-link active" style="margin: auto 10px" aria-current="page" href="#">Today's Plans</a>
+                    <a class="nav-link" style="margin: auto 10px" href="#">Upcoming Plans</a>
+                    <a class="nav-link" style="margin: auto 10px" href="#">Calendar</a>
+                    <a class="nav-link" style="margin: auto 10px" href="#">Progress Track</a>
                 </div>
             </div>
         </div>
@@ -42,48 +43,66 @@
             <h2 class="date"></h2>
         </header>
 
+        <div class="add-plans">
+            <div class="plans-line"></div>
+            <div class="plus-btn">
+                <span class = "add-plans-text">Create new plan</span>
+                <i class='bx bxs-plus-circle bx-lg' style="color: #fd7e14" id = "addPlanIcon"></i>
+            </div>
+        </div>
+
+        <div class="create-plans-form">
+            <div class="plan-header">
+                <input class="form-input" type="text" name="plan-header" id="" placeholder="Give me a one liner">
+                <textarea class="form-input" name="plan-content" id="" cols="30" rows="5" placeholder="So what's the plan?"></textarea>
+                <label class="form-label" for="date">Date</label><input class="form-input" type="date">
+                <label class="form-label" for="start-time">Start time</label><input class="form-input" type="time" name="start-time" id="">
+                <label class="form-label" for="end-time">End time</label><input class="form-input" type="time" name="end-time" id="">
+                <button class="submit-btn" type="submit">SUBMIT</button>
+            </div>
+        </div>
+
         <div class="plans-cluster">
             <div class="time-template">
-                <p class="time-text">21.25 PM  End Time - 22.00</p>
+                <p class="time-text">21.25 PM End Time - 22.00</p>
                 <div class="line"></div>
             </div>
             <div class="cards">
                 <div class="card text-bg-dark mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Add Plans Functionality</h5>
-                        <p class="card-text">I was thinking of adding it above all the plans with a line and a + inside a circle at the right of that line.</p>
+                        <p class="card-text">I was thinking of adding it above all the plans with a line and a + inside
+                            a circle at the right of that line.</p>
                     </div>
                 </div>
                 <div class="card text-dark bg-info mb-3" style="max-width: 65%;">
                     <div class="card-body">
-                        <h5 class="card-title">Info card title</h5>
+                        <h5 class="card-title">fix date - DONE</h5>
                         <p class="card-text">get date fixed</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
         <div class="plans-cluster">
             <div class="time-template">
-                <p class="time-text">has lines with a time below which has cards with the plans at that time</p>
+                <p class="time-text">21.25 PM End Time - 22.00</p>
                 <div class="line"></div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 65%;">
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                    </div>
-                </div>
             </div>
 
             <div class="cards">
-                
+                <div class="card text-white bg-primary mb-3" style="max-width: 65%;">
+                    <div class="card-body">
+                        <h5 class="card-title">FIX time UI</h5>
+                        <p class="card-text">fix time UI</p>
+                    </div>
+                </div>
+
                 <div class="card text-white bg-secondary mb-3" style="max-width: 65%;">
                     <div class="card-body">
-                        <h5 class="card-title">Secondary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
+                        <h5 class="card-title">Make some animations</h5>
+                        <p class="card-text">gsap is a good tool. we thinkin some scroll animations.</p>
                     </div>
                 </div>
             </div>
@@ -91,29 +110,31 @@
 
         <div class="plans-cluster">
             <div class="time-template">
-                <p class="time-text">has lines with a time below which has cards with the plans at that time</p>
+                <p class="time-text">21.25 PM End Time - 22.00</p>
                 <div class="line"></div>
             </div>
 
             <div class="cards">
                 <div class="card text-white bg-success mb-3" style="max-width: 65%;">
                     <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
+                        <h5 class="card-title">ADD Mark as done</h5>
+                        <p class="card-text">make a bid check box that will act as mark as done btn. on the right side
+                            of cards.</p>
                     </div>
                 </div>
                 <div class="card text-white bg-danger mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Danger card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.</p>
                     </div>
                 </div>
                 <div class="card text-dark bg-warning mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.</p>
                     </div>
                 </div>
