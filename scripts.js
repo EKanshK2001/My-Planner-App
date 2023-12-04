@@ -1,5 +1,7 @@
 const dateArea = document.getElementsByClassName("date");
-
+const addPlanBtn = document.getElementById("addPlanBtn");
+const createPlanForm = document.getElementById("createPlanForm");
+const plusIcon = document.getElementById("plus-icon");
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -21,9 +23,47 @@ for (let i = 0; i < dateArea.length; i++) {
 }
 
 
+function toggleForm() {
+    createPlanForm.classList.toggle("hide");
+}
+
+function togglePlusIn() {
+    plusIcon.style.color = '#e9ecef';
+}
+
+function togglePlusOut() {
+    plusIcon.style.color = '#fd7e14';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // media query to resize add plans plus button
 
-var addPlanIcon = document.getElementById("addPlanIcon");
+
+
 
 // function mediaFunction(x) {
 //     if (x) { // If media query matches

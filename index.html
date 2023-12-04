@@ -43,25 +43,31 @@
             <h2 class="date"></h2>
         </header>
 
-        <div class="add-plans">
+        <div class="add-plans" id="addPlanBtn">
             <div class="plans-line"></div>
-            <div class="plus-btn">
-                <span class = "add-plans-text">Create new plan</span>
-                <i class='bx bxs-plus-circle bx-lg' style="color: #fd7e14" id = "addPlanIcon"></i>
-            </div>
+            <button onclick="toggleForm()" onmouseover="togglePlusIn()" onmouseout="togglePlusOut()" class="plus-btn">
+                <span class="add-plans-text">Create new plan</span>
+                <i class='bx bxs-plus-circle bx-lg' id="plus-icon"></i>
+            </button>
         </div>
 
-        <div class="create-plans-form">
+        <div class="create-plans-form hide" id="createPlanForm">
             <div class="plan-header">
                 <input class="form-input" type="text" name="plan-header" id="" placeholder="Give me a one liner">
-                <textarea class="form-input" name="plan-content" id="" cols="30" rows="5" placeholder="So what's the plan?"></textarea>
+                <textarea class="form-input" name="plan-content" id="" cols="30" rows="5"
+                    placeholder="So what's the plan?"></textarea>
                 <div class="label-inputs">
-                    <span class="date-time"><label class="form-label" for="date">Date</label><input class="" type="date"></span>
-                    <span class="date-time"><label class="form-label" for="start-time">Start time</label><input class="" type="time" name="start-time" id=""></span>
-                    <span class="date-time"><label class="form-label" for="end-time">End time</label><input class="" type="time" name="end-time" id=""></span>
+                    <div class="date-time"><label class="form-label" for="date">Date</label><input class="" type="date">
+                    </div>
+                    <div class="date-time"><label class="form-label" for="start-time">Start time</label><input class=""
+                            type="time" name="start-time" id=""></dic>
+                        <div class="date-time"><label class="form-label" for="end-time">End time</label><input class=""
+                                type="time" name="end-time" id=""></div>
+                    </div>
+                    <button class="submit-btn" type="submit">SUBMIT</button>
                 </div>
-                <button class="submit-btn" type="submit">SUBMIT</button>
             </div>
+
         </div>
 
         <div class="plans-cluster">
@@ -73,7 +79,8 @@
                 <div class="card text-bg-dark mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Add Plans Functionality</h5>
-                        <p class="card-text">I was thinking of adding it above all the plans with a line and a + inside
+                        <p class="card-text">I was thinking of adding it above all the plans with a line and a +
+                            inside
                             a circle at the right of that line.</p>
                     </div>
                 </div>
@@ -120,14 +127,16 @@
                 <div class="card text-white bg-success mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">ADD Mark as done</h5>
-                        <p class="card-text">make a bid check box that will act as mark as done btn. on the right side
+                        <p class="card-text">make a bid check box that will act as mark as done btn. on the right
+                            side
                             of cards.</p>
                     </div>
                 </div>
                 <div class="card text-white bg-danger mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Danger card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
                             the
                             card's content.</p>
                     </div>
@@ -135,7 +144,8 @@
                 <div class="card text-dark bg-warning mb-3" style="max-width: 65%;">
                     <div class="card-body">
                         <h5 class="card-title">Warning card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
                             the
                             card's content.</p>
                     </div>

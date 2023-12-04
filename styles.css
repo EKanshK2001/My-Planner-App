@@ -117,7 +117,7 @@ body {
 
 
 
-/* DESKTOP CONTAINER UTILITY CLASS: */
+/* DESKTOP CONTAINER CLASS:  & OTHER UTILITY CLASSES*/
 
 
 .container {
@@ -127,6 +127,12 @@ body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+.hide{
+  display: none;
+}
+
+
 
 
       /* DATE */
@@ -170,11 +176,26 @@ body {
   z-index: 2;
   background-color: var(--bs-gray-200);
   padding: 0% 2%;
+  color: var(--bs-orange);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 2px solid var(--bs-orange);
   border-radius: 12px;
+  transition: all 0.5s;
+}
+
+.add-plans .plus-btn .bxs-plus-circle{
+  color: var(--bs-orange);
+}
+
+.add-plans .plus-btn .bxs-plus-circle:hover{
+  color: var(--bs-gray-200);
+}
+
+.add-plans .plus-btn:hover{
+  color: white;
+  background-color: var(--bs-orange);
 }
 
 .plans-line{
@@ -190,31 +211,43 @@ body {
 
 .create-plans-form{
   margin: 25px 0;
+  transition: all 2s;
 }
 
 .create-plans-form .plan-header{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10px; */
   
 
-  /* display: grid;
+  display: grid;
   grid-template-rows: 1fr 2fr 1fr 1fr;
   grid-template-columns: 3fr;
-  gap: 10px; */
+  gap: 10px;
 
 
 }
 
 .form-input{
   outline: none;
-  padding: 25px;
+  padding: 15px 25px;
 
 }
 
 .label-inputs {
-  
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr;
 }
+
+.label-inputs .date-time {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* .submit-btn {
+  
+} */
 
 /* .create-plans-form .plan-header textarea{
   
