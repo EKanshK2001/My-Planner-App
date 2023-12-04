@@ -64,11 +64,12 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 13,110,253;
+    --bs-primary-rgb: 13,110,253; /*blue*/
+    --bs-indigo-rgb: 102, 16, 242; /*indigo*/
     --bs-secondary-rgb: 108,117,125;
     --bs-success-rgb: 25,135,84;
     --bs-info-rgb: 13,202,240;
-    --bs-warning-rgb: 255,193,7;
+    --bs-warning-rgb: 255,193,7;  /*red*/
     --bs-danger-rgb: 220,53,69;
     --bs-light-rgb: 248,249,250;
     --bs-dark-rgb: 33,37,41;
@@ -112,7 +113,7 @@
 }
 
 body {
-    background-color: var(--bs-gray-200);
+    background-color: var(--bs-gray-100);
 }
 
 
@@ -127,11 +128,6 @@ body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
-.hide{
-  display: none;
-}
-
 
 
 
@@ -151,6 +147,7 @@ body {
 
 
       /* ADD PLANS SECTION */
+
 
 .add-plans{
   display: flex;
@@ -174,7 +171,7 @@ body {
 .plus-btn{
   position: absolute;
   z-index: 2;
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-100);
   padding: 0% 2%;
   color: var(--bs-orange);
   display: flex;
@@ -207,58 +204,78 @@ body {
 
 .create-plans-form{
   margin: 25px 0;
-  transition: all 0.5s;
+  transition: all 0.75s;
 }
 
 .create-plans-form .plan-header{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 10px; */
-  
+  gap: 20px;
 
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr 1fr;
-  grid-template-columns: 3fr;
-  gap: 10px;
+  padding: 5%;
+  background-image: linear-gradient(to bottom right, rgba(var(--bs-indigo-rgb), 0.5), rgba(var(--bs-danger-rgb), 0.3));
+  /* background-image: linear-gradient(rgba(var(--bd-pink-rgb), 0.3), rgba(var(--bd-pink-rgb), 0)); */
+  border-radius: 10px;
 
 
 }
 
-.form-input{
+.create-plans-form .plan-header .form-input{
   outline: none;
-  padding: 15px 25px;
-
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  word-spacing: 2px;
+  resize: none;
 }
-
-.label-inputs {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 3fr;
-}
-
-.label-inputs .date-time {
-  /* display: flex;
-  flex-direction: column; */
-}
-
-/* .submit-btn {
-  
-} */
 
 /* .create-plans-form .plan-header textarea{
   
 } */
 
-.create-plans-form .plan-header .submit-btn{
-  
+.label-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.label-inputs .date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
 
+.label-inputs .date-time .form-label{
+  color: white;
+  font-weight: 600;
+}
 
+.label-inputs .date-time input{
+  outline: none;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 400;
+}
 
-
-
-
+.create-plans-form .plan-header .submit-btn {
+  width: 250px;
+  margin-top: 3%;
+  padding: 10px 20px;
+  border: none;
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  align-self: center;
+}
 
 
 
@@ -270,8 +287,8 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: left;
-  margin: 0px 0px 20px 0;
+  justify-content: center;
+  margin: 20px 0 40px 0;
   padding: 0;
   /* border: 1px solid red; */
 }
@@ -283,10 +300,12 @@ body {
   margin: 0.5% 0px;
   font-weight: 500;
   padding: 10px;
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-100);
+  /* border-radius: 4px; */
+  /* border-top: 2px solid var(--base04);
+  border-bottom: 2px solid var(--base04); */
   border-left: 2px solid var(--base04);
   border-right: 2px solid var(--base04);
-  /* border-radius: 12px; */
 }
 
 .line {

@@ -44,30 +44,41 @@
         </header>
 
         <div class="accordian-item">
-            <div class="add-plans accordian-button" type="button" data-bs-toggle="collapse" data-bs-target="#createPlanForm" aria-expanded="true" aria-controls="collapseOne" id="addPlanBtn">
+            <div class="add-plans accordian-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#createPlanForm" aria-expanded="true" aria-controls="collapseOne" id="addPlanBtn">
                 <div class="plans-line"></div>
-                <button onclick="toggleForm()" onmouseover="togglePlusIn()" onmouseout="togglePlusOut()" class="plus-btn">
+                <button onmouseover="togglePlusIn()" onmouseout="togglePlusOut()"
+                    class="plus-btn">
                     <span class="add-plans-text">Create new plan</span>
                     <i class='bx bxs-plus-circle bx-lg' id="plus-icon"></i>
                 </button>
             </div>
-            <div class="create-plans-form accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#addPlanBtn" id="createPlanForm">
+            <div class="create-plans-form accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#addPlanBtn" id="createPlanForm">
                 <div class="plan-header">
-                    <input class="form-input" type="text" name="plan-header" id="" placeholder="Give me a one liner">
-                    <textarea class="form-input" name="plan-content" id="" cols="30" rows="5"
-                        placeholder="So what's the plan?"></textarea>
+                    <input class="form-input" type="text" name="plan-header" id="oneLiner" placeholder="Give me a one liner">
+
+                    <textarea class="form-input" name="plan-content" id="" cols="30" rows="5" placeholder="So what's the plan?"></textarea>
+
                     <div class="label-inputs">
-                        <div class="date-time"><label class="form-label" for="date">Date</label><input class="" type="date">
+                        <div class="date-time">
+                            <label class="form-label" for="date">DATE</label>
+                            <input class="" type="date">
                         </div>
-                        <div class="date-time"><label class="form-label" for="start-time">Start time</label><input class=""
-                                type="time" name="start-time" id=""></dic>
-                            <div class="date-time"><label class="form-label" for="end-time">End time</label><input class=""
-                                    type="time" name="end-time" id=""></div>
+                        <div class="date-time">
+                            <label class="form-label" for="start-time">START TIME</label>
+                            <input class="" type="time" name="start-time" id="">
                         </div>
-                        <button class="submit-btn" type="submit">SUBMIT</button>
+                        <div class="date-time">
+                            <label class="form-label" for="end-time">END TIME</label>
+                            <input class="" type="time" name="end-time" id="">
+                        </div>
                     </div>
+
+                    <button class="submit-btn" type="submit">SUBMIT</button>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="plans-cluster">
