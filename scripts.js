@@ -23,9 +23,9 @@ for (let i = 0; i < dateArea.length; i++) {
 }
 
 
-function toggleForm() {
-    createPlanForm.classList.toggle("hide");
-}
+// function toggleForm() {
+//     createPlanForm.classList.toggle("hide");
+// }
 
 function togglePlusIn() {
     plusIcon.style.color = '#e9ecef';

@@ -189,10 +189,6 @@ body {
   color: var(--bs-orange);
 }
 
-.add-plans .plus-btn .bxs-plus-circle:hover{
-  color: var(--bs-gray-200);
-}
-
 .add-plans .plus-btn:hover{
   color: white;
   background-color: var(--bs-orange);
@@ -211,7 +207,7 @@ body {
 
 .create-plans-form{
   margin: 25px 0;
-  transition: all 2s;
+  transition: all 0.5s;
 }
 
 .create-plans-form .plan-header{
