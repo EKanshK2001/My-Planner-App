@@ -172,7 +172,7 @@ header {
 }
 
 header .date {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   margin: 50px 0px;
@@ -365,7 +365,7 @@ main{
 }
 
 .card {
-  max-width: 75vw;
+  max-width: 70vw;
 }
 
 .plans-cluster{
