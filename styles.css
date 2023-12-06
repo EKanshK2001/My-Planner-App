@@ -172,7 +172,7 @@ header {
 }
 
 header .date {
-  width: 50vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   margin: 50px 0px;
@@ -356,7 +356,6 @@ main{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  
 }
 
 .cards{
@@ -366,7 +365,7 @@ main{
 }
 
 .card {
-  max-width: 90%;
+  max-width: 75vw;
 }
 
 .plans-cluster{
@@ -413,9 +412,9 @@ main{
 
 /* 2xl */
 @media (max-width: 1536px) {
-  /* .container {
+  .container {
     max-width: 1280px;
-  } */
+  }
 
   header .date {
     font-size: 3em;
@@ -425,9 +424,9 @@ main{
 
 /* xl */
 @media (max-width: 1280px) {
-  /* .container {
+  .container {
     max-width: 1024px;
-  } */
+  }
   
   .time-template .time-text{
     font-size: 1.5em;
@@ -440,9 +439,9 @@ main{
 
 /* lg */
 @media (max-width: 1024px) {
-  /* .container {
+  .container {
     max-width: 768px;
-  } */
+  }
   .time-template .time-text{
     font-size: 1.3em;
   }
@@ -453,43 +452,58 @@ main{
 
 /* md */
 @media (max-width: 768px) {
-  /* .container {
+  .container {
     max-width: 640px;
-  } */
+  }
   .time-template .time-text{
     font-size: 1.3em;
   }
 
   header .date {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+
+  .label-inputs {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
 /* sm */
 @media (max-width: 640px) {
-  /* .container {
+  .container {
     max-width: 475px;
-  } */
+  }
   .time-template .time-text{
     font-size: 1.3em;
   }
 
   header .date {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+
+  .label-inputs {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
   .time-template .time-text{
     font-size: 1.3em;
   }
 
   header .date {
-    font-size: 3em;
+    font-size: 2em;
+  }
+
+  .label-inputs {
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
