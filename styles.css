@@ -122,6 +122,10 @@ body {
 
 
 .container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  /* align-items: center; */
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
@@ -129,18 +133,53 @@ body {
   padding-right: 0.5rem;
 }
 
+      /* NAVBAR */
+
+.navbar {
+  min-height: 75px;
+}
+
+.container-fluid {
+  min-height: 75px;
+}
+
+.navbar-brand {
+  font-size: 1.8em;
+}
+
+.navbar-toggler-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-nav{
+  
+}
+
+.nav-link{
+  font-size: 1.1em;
+}
+
 
 
       /* DATE */
 
-
-.date {
+header {
   display: flex;
   flex-direction: column;
-  margin: 50px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+header .date {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
   align-items: center;
   justify-content: center;
-  font-size: 2.5em;
+  font-size: 3em;
+  font-weight: 600;
 }
 
                     /* MAIN SECTION */
@@ -211,13 +250,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
   padding: 5%;
   background-image: linear-gradient(to bottom right, rgba(var(--bs-indigo-rgb), 0.5), rgba(var(--bs-danger-rgb), 0.3));
   /* background-image: linear-gradient(rgba(var(--bd-pink-rgb), 0.3), rgba(var(--bd-pink-rgb), 0)); */
   border-radius: 10px;
-
-
 }
 
 .create-plans-form .plan-header .form-input{
@@ -266,7 +302,7 @@ body {
 }
 
 .create-plans-form .plan-header .submit-btn {
-  width: 250px;
+  width: 50%;
   margin-top: 3%;
   padding: 10px 20px;
   border: none;
@@ -298,12 +334,9 @@ body {
   z-index: 2;
   font-size: 1.5em;
   margin: 0.5% 0px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
   background-color: var(--bs-gray-100);
-  /* border-radius: 4px; */
-  /* border-top: 2px solid var(--base04);
-  border-bottom: 2px solid var(--base04); */
   border-left: 2px solid var(--base04);
   border-right: 2px solid var(--base04);
 }
@@ -326,6 +359,26 @@ main{
   
 }
 
+.cards{
+  margin: 0;
+  padding: 0;
+
+}
+
+.card {
+  max-width: 90%;
+}
+
+.plans-cluster{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 
@@ -360,50 +413,69 @@ main{
 
 /* 2xl */
 @media (max-width: 1536px) {
-  .container {
+  /* .container {
     max-width: 1280px;
+  } */
+
+  header .date {
+    font-size: 3em;
   }
 
 }
 
 /* xl */
 @media (max-width: 1280px) {
-  .container {
+  /* .container {
     max-width: 1024px;
-  }
+  } */
   
   .time-template .time-text{
     font-size: 1.5em;
+  }
+
+  header .date {
+    font-size: 3em;
   }
 }
 
 /* lg */
 @media (max-width: 1024px) {
-  .container {
+  /* .container {
     max-width: 768px;
-  }
+  } */
   .time-template .time-text{
-    font-size: 1.4em;
+    font-size: 1.3em;
+  }
+  header .date {
+    font-size: 3em;
   }
 }
 
 /* md */
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     max-width: 640px;
-  }
+  } */
   .time-template .time-text{
     font-size: 1.3em;
+  }
+
+  header .date {
+    font-size: 3em;
   }
 }
 
 /* sm */
 @media (max-width: 640px) {
-  .container {
+  /* .container {
     max-width: 475px;
-  }
+  } */
   .time-template .time-text{
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+
+  header .date {
+    font-size: 3em;
   }
 }
 
@@ -413,7 +485,11 @@ main{
     width: 100%;
   }
   .time-template .time-text{
-    font-size: 1.1em;
+    font-size: 1.3em;
+  }
+
+  header .date {
+    font-size: 3em;
   }
 }
 
