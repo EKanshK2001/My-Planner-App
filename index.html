@@ -47,16 +47,14 @@
 
             <!-- CREATE PLAN -->
         <div class="accordian-item">
-            <div class="add-plans accordian-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#createPlanForm" aria-expanded="true" aria-controls="collapseOne" id="addPlanBtn">
+            <div class="add-plans">
                 <div class="plans-line"></div>
-                <button onmouseover="togglePlusIn()" onmouseout="togglePlusOut()"
-                    class="plus-btn">
-                    <span class="add-plans-text">Create new plan</span>
+                <button class="plus-btn accordian-button" type="button"  onmouseover="togglePlusIn()" onmouseout="togglePlusOut()" data-bs-toggle="collapse" data-bs-target="#createPlanForm" aria-expanded="true" id="addPlanBtn">
+                    <span class="add-plans-text">Create New Plan</span>
                     <i class='bx bxs-plus-circle bx-lg' id="plus-icon"></i>
                 </button>
             </div>
-            <div class="create-plans-form accordion-collapse collapse" aria-labelledby="headingOne"
+            <div class="create-plans-form accordion-collapse collapse"
                 data-bs-parent="#addPlanBtn" id="createPlanForm">
                 <div class="plan-header">
                     <input class="form-input" type="text" name="plan-header" id="oneLiner" placeholder="Give me a one liner">
@@ -117,6 +115,8 @@
             </div>
         </div>
 
+        <div class="separation-line"></div>
+
         <div class="plans-cluster">
             <div class="time-template">
                 <p class="time-text">21.25 PM End Time - 22.00</p>
@@ -144,6 +144,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="separation-line"></div>
 
         <div class="plans-cluster">
             <div class="time-template">
