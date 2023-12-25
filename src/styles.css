@@ -408,9 +408,24 @@ main{
   align-items: center;
 }
 
-.card-checkbox i{
-  padding: 0 10%;
+.card-checkbox .mark-as-done {
+  background-color: var(--bs-gray-100);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
 }
+
+
+.card-checkbox .mark-as-done i{
+  padding: 0 10%;
+  color: var(--bs-orange);
+}
+
+/* .card-checkbox .spacer{
+  padding: 1px;
+} */
 
 
 
